@@ -1,0 +1,11 @@
+[Unit]
+Description=Attach USB/IP device from server
+After=network-online.target
+Requires=network-online.target
+
+[Service]
+ExecStart=/usr/bin/usbip attach -r %i -b 1-1
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
