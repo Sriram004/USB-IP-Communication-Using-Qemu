@@ -21,17 +21,13 @@ This project demonstrates how to share physical USB devices from a host system a
 
 ### 1. On USB Host
 
-```bash
+
 sudo ./scripts/usbip_server_setup.sh
 2. On Client
-bash
-Copy
-Edit
 sudo ./scripts/usbip_client_attach.sh <host-ip> <busid>
 3. Launch VM
 bash
-Copy
-Edit
+
 ./scripts/qemu_vm_launch.sh
 📷 Diagram
 
@@ -47,17 +43,3 @@ Webcams and other isochronous devices may not work.
 
 Some USB 3.0 devices may need extra drivers.
 
-📃 License
-MIT
-
-yaml
-Copy
-Edit
-
----
-
-## 🧠 Bonus Ideas
-
-- Include a **demo GIF or YouTube link** to showcase USB device redirection.
-- Add a **`usbip.json` config file** for dynamic attach scripting.
-- Use GitHub Actions to test USBIP client scripts (in dry-run/mock mode).
